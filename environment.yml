@@ -1,0 +1,32 @@
+name: mgp_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  # Base estable y actualizada
+  - python=3.11
+  - jupyter
+  - ipykernel
+  
+  # Ecosistema PyTorch con aceleración de hardware
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  
+  # Ecosistema TensorFlow (TensorFlow 2.x detecta la GPU automáticamente si está bien configurado)
+  - tensorflow
+  - tensorboard
+  
+  # Machine Learning clásico y Visualización
+  - scikit-learn
+  - matplotlib
+  
+  # Herramientas de interfaz y visualizaciones extra vía pip
+  - pip:
+    - keras
+    - gradio
+    - streamlit
+    - plotly
+    - altair
