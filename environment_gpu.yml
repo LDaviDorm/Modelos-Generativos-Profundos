@@ -1,0 +1,23 @@
+name: mgp_env_gpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - ipykernel
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - tensorflow
+  - tensorboard
+  - scikit-learn
+  - matplotlib
+  - pip:
+    - keras
+    - gradio
+    - streamlit
+    - plotly
+    - altair

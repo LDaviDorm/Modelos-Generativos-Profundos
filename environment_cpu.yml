@@ -1,0 +1,22 @@
+name: mgp_env_cpu
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - ipykernel
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cpuonly
+  - tensorflow
+  - tensorboard
+  - scikit-learn
+  - matplotlib
+  - pip:
+    - keras
+    - gradio
+    - streamlit
+    - plotly
+    - altair
